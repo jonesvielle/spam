@@ -11,9 +11,21 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "primary-blue": "#3556AB",
+        "primary-gold": "#CDE53D",
+        "dark-blue": "#071D55",
+        "primary-yellow": "#F2C94C",
+        "dark-green": "#399649",
+        "primary-green": "#53DA69",
+        "border-green": "#49C25D",
+        "primary-gray": "#8D8D8D",
+        "primary-red": "#AB3535",
+      },
+      boxShadow: {
+        "right-lg": "0 0 20px -10px rgba(0, 0, 0, 0.28)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-extended-shadows")],
 };
 export default config;
